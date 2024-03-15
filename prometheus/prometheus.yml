@@ -8,6 +8,7 @@ rule_files:
   - 'recording.rules.yml'
 
 scrape_configs:
-  - job_name: prometheus
+  - job_name: reverse-proxy-poc
+    metrics_path: /api/4489233/metrics
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ['reverse-proxy-poc-w0gb:10000']
