@@ -1,6 +1,1 @@
-groups:
-  - name: events
-    interval: 15s
-    rules:
-      - record: example_metric_total
-        expr: sum by(job) (rate(example_metric[5m]))
+
